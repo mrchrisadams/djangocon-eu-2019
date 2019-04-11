@@ -1,0 +1,1 @@
+web: cd jupaltdjango; gunicorn jupaltdjango.wsgi:application -b 0.0.0.0:$PORT

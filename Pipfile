@@ -9,6 +9,8 @@ altair = "*"
 jupyterlab = "*"
 dj-database-url = "*"
 django-extensions = "*"
+"psycopg2" = "*"
+gunicorn = "*"
 
 [dev-packages]
 ipdb = "*"
