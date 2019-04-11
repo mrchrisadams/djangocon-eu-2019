@@ -11,6 +11,7 @@ dj-database-url = "*"
 django-extensions = "*"
 "psycopg2" = "*"
 gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 ipdb = "*"
