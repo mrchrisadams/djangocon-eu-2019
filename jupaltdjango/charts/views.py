@@ -14,7 +14,7 @@ def my_cool_chart_view(req):
         alt.X('co2_reduction:Q'),
         alt.Color("solution:N",
             legend=None,
-            scale=alt.Scale(scheme='greenblue')
+            scale=alt.Scale(scheme='tableau20')
         ),
         tooltip=["solution:N", 'co2_reduction:Q']
     )
