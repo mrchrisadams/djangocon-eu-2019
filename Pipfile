@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+altair = "*"
+jupyterlab = "*"
+
+[dev-packages]
+ipdb = "*"
+django-pdb = "*"
+pytest-watch = "*"
+pytest-django = "*"
+django-debug = "*"
+django-extensions = "*"
+
+[requires]
+python_version = "3.6"
