@@ -8,6 +8,7 @@ django = "*"
 altair = "*"
 jupyterlab = "*"
 dj-database-url = "*"
+django-extensions = "*"
 
 [dev-packages]
 ipdb = "*"
