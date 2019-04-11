@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <!-- Load Vega, Vega-Lite & Vega Embed -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@3"></script>
+  <!-- Import vega-embed -->
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@4"></script>
+
+
+  </head>
+  <title> Jup-Alt-Django</title>
+
+  <body class="w-100 sans-serif bg-white pa4">
+
+  <main>
+    <h1>
+    Ohh, so <em>that's</em> how you make charts with Jupyter, Altair and Django.</h1>
+  <h2>I can totally do that!</h2>
+
+  <div id="viz">
+    <!-- viz will replace content here -->
+  </div>
+
+  <script type="text/javascript">
+    var spec = "{% url 'my-cool-chart' %}";
+    // transform the vega spec from altair as JSON,
+    // and render our cool viz on the page
+    vegaEmbed('#viz', spec)
+  </script>
+  </main>
+
+  </body>
+</html>
